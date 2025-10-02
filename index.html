@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Almighty HVAC</title>
+    <link rel="stylesheet" href="style.css">
+    <!-- <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous"> -->
+</head>
+
+<body>
+
+    <!-- HEADER / NAV -->
+    <header>
+        <div class="AHVAC-generic-container AHVAC-nav-container">
+            <h1 class="logo">Almighty<span>HVAC</span></h1>
+            <nav>
+                <a href="#AHVAC-hero-section">Start</a>
+                <a href="#AHVAC-about-section">About us</a>
+                <a href="#AHVAC-services-section">Services</a>
+                <a href="#AHVAC-gallery">Gallery</a>
+                <a href="#AHVAC-contact">Contact</a>
+            </nav>
+        </div>
+    </header>
+
+    <!-- HERO -->
+    <section id="AHVAC-hero-section">
+        <div class="AHVAC-hero-content">
+            <h2>Total Comfort, Every Season</h2>
+            <h1>Professional <span>HVAC</span> Services You Can Rely On</h1>
+            <p>From precision heating to advanced cooling and indoor air-quality solutions, we keep your home or business perfectly balanced year-round.</p>
+            <div class="AHVAC-hero-buttons">
+                <button onclick="scrollToSection('AHVAC-services-section')">View Services</button>
+                <button onclick="scrollToSection('contact')" class="outline">Request a Free Estimate</button>
+            </div>
+        </div>
+    </section>
+
+    <!-- FEATURES -->
+    <section id="AHVAC-features-section">
+        <div class="AHVAC-generic-container AHVAC-features-grid">
+            <div class="AHVAC-features-card light-blue-bg">
+                <img src="svg/helmet-svgrepo-com.svg" class="AHVAC-features-card-image">
+                <h3>Expert Technicians</h3>
+                <p>Certified professionals with years of hands-on HVAC experience.</p>
+            </div>
+            <div class="AHVAC-features-card dark-blue-bg">
+                <img src="svg/clock-circle-svgrepo-com.svg" class="AHVAC-features-card-image">
+                <h3>Fast & Reliable</h3>
+                <p>Prompt scheduling and 24/7 emergency support to keep your system running without interruption.</p>
+            </div>
+            <div class="AHVAC-features-card light-blue-bg">
+                <img src="svg/leaf-svgrepo-com.svg" class="AHVAC-features-card-image">
+                <h3>Energy-Efficient Solutions</h3>
+                <p>Modern equipment and smart upgrades to cut energy costs.</p>
+            </div>
+            <div class="AHVAC-features-card dark-blue-bg">
+                <img src="svg/price-svgrepo-com.svg" class="AHVAC-features-card-image">
+                <h3>Transparent Pricing</h3>
+                <p>No hidden fees—just clear, upfront quotes every time.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- ABOUT -->
+    <section id="AHVAC-about-section" class="AHVAC-generic-container AHVAC-about-container">
+        <div class="AHVAC-about-text">
+            <h2>Your Year-Round <span>Climate</span> Specialists</h2>
+            <p>For more than 15 years, we have delivered high-quality HVAC solutions for residential and commercial clients. Our team combines advanced diagnostics with proven expertise to design, install, and maintain systems that ensure ideal comfort and healthy indoor air. From new construction to retrofits and regular maintenance, we provide dependable service tailored to your specific needs.</p>
+            <button onclick="scrollToSection('contact')">Saber más</button>
+        </div>
+        <div class="AHVAC-about-img">
+            <img src="img/interface/AC-blue.jpg" alt="AC installation">
+        </div>
+    </section>
+
+    <!-- SERVICES -->
+    <section id="AHVAC-services-section">
+        <div class="AHVAC-generic-container">
+            <h2 class="AHVAC-section-title">Services</h2>
+            <div class="AHVAC-services-grid">
+                <div class="AHVAC-service-card">
+                    <img src="img/interface/installation.jpg" alt="HVAC Installation">
+                    <h3>HVAC Installation</h3>
+                    <p>Expert design and professional installation of high-efficiency heating, cooling, and ventilation systems. We size every system to your space for optimal performance, comfort, and energy savings from day one.</p>
+                </div>
+                <div class="AHVAC-service-card">
+                    <img src="img/interface/installation2.jpg" alt="Service">
+                    <h3>Service</h3>
+                    <p>Reliable troubleshooting and repairs for all major brands and models. Whether it is a sudden breakdown or a persistent issue, our certified technicians quickly restore your system to peak operation.</p>
+                </div>
+                <div class="AHVAC-service-card">
+                    <img src="img/interface/installation3.jpg" alt="Tune ups">
+                    <h3>Tune ups</h3>
+                    <p>Seasonal tune-ups that keep your equipment running smoothly and efficiently. We inspect key components, adjust settings, and clean critical parts to improve airflow and prevent costly failures.</p>
+                </div>
+                <div class="AHVAC-service-card">
+                    <img src="img/interface/installation4.jpg" alt="Maintenance">
+                    <h3>Maintenance</h3>
+                    <p>Comprehensive, scheduled maintenance programs designed to extend equipment life and reduce energy costs. Regular checkups ensure consistent indoor comfort and help you avoid unexpected repairs.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- GALLERY -->
+    <section id="AHVAC-gallery">
+        <div class="AHVAC-generic-container">
+            <h2 class="AHVAC-section-title">Trusted <span>HVAC Installations</span> by Our Team</h2>
+            <!-- <div id="AHVAC-gallery-container">
+                <p>Request a Free Estimate! Ready to upgrade or repair your cooling system? Fill out
+                the form below and one of our specialists will reach out within 24 hours.</p>
+            </div> -->
+            <div class="carousel-container">
+                <div class="carousel-track">
+                    <div class="slide"><img src="img/carousel/img1.jpg" alt="Imagen 1"></div>
+                    <div class="slide"><img src="img/carousel/img2.jpg" alt="Imagen 2"></div>
+                    <div class="slide"><img src="img/carousel/img3.jpg" alt="Imagen 3"></div>
+                    <div class="slide"><img src="img/carousel/img4.jpg" alt="Imagen 3"></div>
+                    <div class="slide"><img src="img/carousel/img5.jpg" alt="Imagen 3"></div>
+                </div>
+                <button class="carousel-btn prev">‹</button>
+                <button class="carousel-btn next">›</button>
+                <div class="carousel-dots"></div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CONTACT -->
+    <section id="AHVAC-contact">
+        <div class="AHVAC-generic-container">
+            <h2 class="AHVAC-section-title">Contact</h2>
+            <p class="AHVAC-section-text">Request a Free Estimate! Ready to upgrade or repair your cooling system? Fill out
+                the form below and one of our specialists will reach out within 24 hours.</p>
+            <form>
+                <input type="text" placeholder="Name" required>
+                <input type="email" placeholder="Email" required>
+                <textarea rows="5" placeholder="Tell us about your AC needs..." required></textarea>
+                <button type="submit">Send Message</button>
+            </form>
+        </div>
+    </section>
+
+    <footer>
+        <p>&copy; © 2025 Almighty HVAC Solutions. All rights reserved.</p>
+    </footer>
+
+    <script src="script.js"></script>
+    <!-- <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script> -->
+</body>
+
+</html>

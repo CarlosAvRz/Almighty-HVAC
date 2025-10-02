@@ -1,0 +1,363 @@
+:root {
+    --light-blue: #4bb5ff;
+    --dark-blue: #062a40;
+    --light-maple: #cd6920;
+    --dark-maple: #a33b15;
+}
+
+/* RESET & BASE */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: 'Segoe UI', sans-serif;
+    color: #333;
+    line-height: 1.6;
+}
+
+img {
+    max-width: 100%;
+    border-radius: 10px;
+}
+
+span {
+    color: var(--light-maple);
+}
+
+.AHVAC-generic-container {
+    width: 90%;
+    max-width: 1200px;
+    margin: auto;
+}
+
+/* HEADER */
+header {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    background: var(--dark-blue);
+    color: white;
+    z-index: 999;
+}
+
+.AHVAC-nav-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 0;
+}
+
+.logo {
+    font-size: 1.8rem;
+}
+
+nav a {
+    color: white;
+    margin-left: 20px;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+nav a:hover {
+    color: var(--light-maple);
+}
+
+/* HERO */
+#AHVAC-hero-section {
+    background: linear-gradient(to right, var(--dark-blue), rgba(0, 0, 0, 0)), url("img/interface/AC.jpg") center/cover no-repeat;
+    color: white;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding: 0 20px;
+}
+
+.AHVAC-hero-content h2 {
+    font-size: 1.8rem;
+    margin-bottom: 10px;
+    color: var(--light-maple);
+}
+
+.AHVAC-hero-content h1 {
+    font-size: 3rem;
+    margin-bottom: 20px;
+}
+
+.AHVAC-hero-content p {
+    max-width: 600px;
+    margin: auto;
+    margin-bottom: 25px;
+}
+
+.AHVAC-hero-buttons button {
+    padding: 12px 25px;
+    margin: 5px;
+    border: none;
+    border-radius: 5px;
+    background: var(--light-maple);
+    color: white;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.AHVAC-hero-buttons .outline {
+    background: transparent;
+    border: 2px solid var(--light-maple);
+}
+
+.AHVAC-hero-buttons button:hover {
+    background: var(--dark-blue);
+    border-color: var(--dark-blue);
+}
+
+/* FEATURES */
+#AHVAC-features-section {
+    background: #f4f9ff;
+    padding: 60px 0;
+}
+
+.AHVAC-features-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 20px;
+}
+
+.AHVAC-features-card {
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    position: relative;
+    transition: 0.5s
+}
+
+.AHVAC-features-card h3 {
+    margin-bottom: 10px;
+    color: white;
+}
+
+.AHVAC-features-card p {
+    margin-bottom: 10px;
+    color: white;
+}
+
+.AHVAC-features-card:hover {
+    transform: translateY(-15px);
+}
+
+.AHVAC-features-card-image {
+    width: 100px;
+    height: auto;
+}
+
+.light-blue-bg {
+    background: var(--light-maple);
+}
+
+.dark-blue-bg {
+    background: var(--dark-blue);
+}
+
+/* ABOUT */
+.AHVAC-about-container {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    padding: 60px 0;
+}
+
+.AHVAC-about-text {
+    flex: 1;
+    padding: 20px;
+}
+
+.AHVAC-about-text h2 {
+    font-size: 2rem;
+    color: var(--dark-blue);
+    margin-bottom: 20px;
+}
+
+.AHVAC-about-text button {
+    background: var(--light-maple);
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    margin-top: 15px;
+    cursor: pointer;
+}
+
+.AHVAC-about-img {
+    flex: 1;
+    padding: 20px;
+    text-align: center;
+}
+
+/* SERVICES */
+#AHVAC-services-section {
+    background: #f4f4f4;
+    padding: 60px 0;
+}
+
+.AHVAC-section-title {
+    text-align: center;
+    font-size: 2rem;
+    color: var(--dark-blue);
+    margin-bottom: 40px;
+}
+
+.AHVAC-services-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 20px;
+}
+
+.AHVAC-service-card {
+    background: white;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    padding: 20px;
+}
+
+.AHVAC-service-card h3 {
+    margin: 15px 0;
+    color: var(--dark-blue);
+}
+
+.AHVAC-service-card {
+    position: relative;
+    transition: 0.5s
+}
+
+.AHVAC-service-card:hover {
+    transform: translateY(-15px);
+}
+
+/* GALLEY */
+#AHVAC-gallery {
+    padding: 60px 0;
+}
+
+.carousel-container {
+  position: relative;
+  width: 80%;
+  max-width: 800px;
+  margin: 0 auto;
+  overflow: hidden;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.3);
+}
+
+.carousel-track {
+  display: flex;
+  transition: transform 0.5s ease;
+}
+
+.slide {
+  min-width: 100%;
+}
+
+.slide img {
+  width: 100%;
+  display: block;
+}
+
+.carousel-btn {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background: rgba(0,0,0,0.5);
+  color: white;
+  border: none;
+  font-size: 2rem;
+  cursor: pointer;
+  padding: 0.5rem 1rem;
+  border-radius: 50%;
+  z-index: 10;
+}
+
+.carousel-btn:hover {
+  background: rgba(0,0,0,0.7);
+}
+
+.prev { left: 10px; }
+.next { right: 10px; }
+
+.carousel-dots {
+  position: absolute;
+  bottom: 10px;
+  left: 50%;
+  transform: translateX(-50%);
+  display: flex;
+  gap: 8px;
+}
+
+.carousel-dots button {
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  border: none;
+  background: rgba(255,255,255,0.6);
+  cursor: pointer;
+}
+
+.carousel-dots button.active {
+  background: white;
+}
+
+/* CONTACT */
+#AHVAC-contact {
+    background: #f4f4f4;
+    padding: 60px 0;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    max-width: 500px;
+    margin: auto;
+}
+
+form input,
+form textarea {
+    margin: 10px 0;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+form button {
+    padding: 12px;
+    background: var(--dark-blue);
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+form button:hover {
+    background: var(--light-maple);
+}
+
+.AHVAC-section-text {
+    text-align: center;
+    max-width: 600px;
+    margin: auto;
+    margin-bottom: 25px;
+}
+
+/* FOOTER */
+footer {
+    background: var(--dark-blue);
+    color: white;
+    text-align: center;
+    padding: 20px;
+}
