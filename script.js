@@ -5,7 +5,7 @@ const nextButton = document.querySelector('.next');
 const prevButton = document.querySelector('.prev');
 const dotsNav = document.querySelector('.carousel-dots');
 
-// Crear puntos de navegación
+// Create navigation dots
 slides.forEach((_, i) => {
   const dot = document.createElement('button');
   if (i === 0) dot.classList.add('active');
@@ -36,7 +36,7 @@ dots.forEach((dot, i) => {
   dot.addEventListener('click', () => moveToSlide(i));
 });
 
-// Auto-play cada 4 segundos
+// Auto-play each 4 seconds
 setInterval(() => {
   const nextIndex = (currentIndex + 1) % slides.length;
   moveToSlide(nextIndex);
@@ -57,10 +57,23 @@ hamburger.addEventListener('click', () => {
   navLinks.classList.toggle('show');
 });
 
-// Optional: close menu when a link is clicked (mobile)
+// Close menu when a link is clicked (mobile)
 document.querySelectorAll('.nav-links a').forEach(link => {
   link.addEventListener('click', () => {
     hamburger.classList.remove('active');
     navLinks.classList.remove('show');
   });
 });
+
+// Copy to clipboard function
+function copyTextToClipboard(text) {
+  const copyText = String(text);
+  navigator.clipboard.writeText(copyText).
+    then(() => {
+      // Provide user feedback
+      alert("Text copied to clipboard: " + copyText);
+    })
+    .catch(err => {
+      console.error('Failed to copy text: ', err);
+    });
+}
