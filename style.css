@@ -173,7 +173,7 @@ nav a:hover {
 }
 
 .AHVAC-about-text {
-    flex: 1;
+    flex: 50%;
     padding: 20px;
 }
 
@@ -194,9 +194,15 @@ nav a:hover {
 }
 
 .AHVAC-about-img {
-    flex: 1;
+    flex: 50%;
     padding: 20px;
     text-align: center;
+}
+
+@media (max-width: 800px) {
+  .AHVAC-about-text, .AHVAC-about-img {
+    flex: 100%;
+  }
 }
 
 /* SERVICES */
@@ -318,33 +324,22 @@ nav a:hover {
     padding: 60px 0;
 }
 
-form {
-    display: flex;
-    flex-direction: column;
-    max-width: 500px;
-    margin: auto;
+#AHVAC-table-contact-info {
+    margin-left: auto;
+    margin-right: auto;
+    border-collapse: separate;
+    border-spacing: 10px 10px;
 }
 
-form input,
-form textarea {
-    margin: 10px 0;
-    padding: 12px;
-    border: 1px solid #ccc;
-    border-radius: 5px;
+#AHVAC-table-contact-info th, td {
+    text-align: center;
 }
 
-form button {
-    padding: 12px;
-    background: var(--dark-blue);
-    color: white;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
-    font-weight: bold;
-}
-
-form button:hover {
-    background: var(--light-maple);
+#AHVAC-table-contact-info img {
+    max-width: 25px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 .AHVAC-section-text {
