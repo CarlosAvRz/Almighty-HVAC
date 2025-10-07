@@ -1,3 +1,4 @@
+// CAROUSEL VARIABLES AND FUNCTIONS
 const track = document.querySelector('.carousel-track');
 const slides = Array.from(track.children);
 const nextButton = document.querySelector('.next');
@@ -41,7 +42,25 @@ setInterval(() => {
   moveToSlide(nextIndex);
 }, 4000);
 
+// GENERAL VARIABLES AND FUNCTIONS
 // Smooth scroll function
 function scrollToSection(id) {
-    document.getElementById(id).scrollIntoView({ behavior: 'smooth' });
+  document.getElementById(id).scrollIntoView({ behavior: 'smooth' });
 }
+
+// NAVIGATION BAR RESPONSIVE DESIGN VARIABLES AND FUNCTIONS
+const hamburger = document.querySelector('.hamburger');
+const navLinks = document.querySelector('.nav-links');
+
+hamburger.addEventListener('click', () => {
+  hamburger.classList.toggle('active');
+  navLinks.classList.toggle('show');
+});
+
+// Optional: close menu when a link is clicked (mobile)
+document.querySelectorAll('.nav-links a').forEach(link => {
+  link.addEventListener('click', () => {
+    hamburger.classList.remove('active');
+    navLinks.classList.remove('show');
+  });
+});
