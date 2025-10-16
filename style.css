@@ -255,7 +255,13 @@ nav a:hover {
     padding: 10px 20px;
     border-radius: 5px;
     margin-top: 15px;
+    font-weight: bold;
     cursor: pointer;
+}
+
+.AHVAC-about-text button:hover {
+    background: var(--dark-blue);
+    border-color: var(--dark-blue);
 }
 
 .AHVAC-about-img {
@@ -420,4 +426,26 @@ footer {
     color: white;
     text-align: center;
     padding: 20px;
+}
+
+#img-logo-footer {
+    width: 50vh;
+    display: block;
+    margin: auto;
+    margin-bottom: 25px;
+}
+
+.AHVAC-copy-button {
+    background: var(--dark-blue);
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.AHVAC-copy-button:hover {
+    background: var(--light-maple);
+    border-color: var(--light-maple);
 }
